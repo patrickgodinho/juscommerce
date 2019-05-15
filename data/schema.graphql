@@ -1,0 +1,16 @@
+schema {
+  query: RootQueryType
+}
+
+type ProductType {
+  id: ID
+  name: String
+  color: String
+  image: String
+}
+
+type RootQueryType {
+  products: [ProductType]
+  product(id: ID!): ProductType
+}
+
